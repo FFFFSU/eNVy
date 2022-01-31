@@ -1,0 +1,18 @@
+FROM ubuntu
+
+COPY idps.py /home/idps.py
+
+RUN apt-get update
+RUN apt-get -y install nano net-tools software-properties-common iputils-ping curl
+
+RUN add-apt-repository ppa:deadsnakes/ppa
+RUN apt -y install python3.9 python3.9-distutils
+
+RUN curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+RUN python3.9 get-pip.py
+
+RUN pip install mysql-connector-python
+
+EXPOSE 80 9999
+
+CMD [ "python3.9", "/home/idps.py" ]

@@ -1,0 +1,9 @@
+FROM php:8.0-apache
+
+WORKDIR /var/www/html
+COPY index.html index.html
+COPY about.html about.html
+COPY about.php about.php
+COPY profile.php profile.php
+
+EXPOSE 80
