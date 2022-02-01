@@ -173,7 +173,7 @@ def menu():
             if idpsServiceName != "Not set":
                 shutDown = ""
                 while shutDown.lower() != 'y' and shutDown.lower() != 'n':
-                    shutDown = str(input("IDPS Service are still running"))
+                    shutDown = str(input("IDPS Service are still running. Do you want to stop it? y/n: "))
                 if shutDown.lower() == 'y':
                     service = checkIDPSService()
                     service.remove()
@@ -183,7 +183,7 @@ def main():
     global dockerClient, networkName, webServiceName, idpsServiceName
     networkName = "Not set"
     webServiceName = "Not set"
-    idpsServiceName = "lala"
+    idpsServiceName = "Not set"
     dockerClient = docker.from_env()
 
     menu()
