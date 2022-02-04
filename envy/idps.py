@@ -240,8 +240,8 @@ def main():
     global webServiceName, idpsServiceName, nodeID, managerID, managerIPAddress, isWorker, worker
     host = "0.0.0.0"
     port = 80
-    rules = ["\.\.\/", "\.\.\;\/", "\.\.\\\\", "%2e%2e\/", ".ini", ".conf", "[A-Za-z]{1}:", "http:\/\/", "https:\/\/", "rsa", "id", "hosts", "motd", "bash", "history", ".log", "etc", "passwd", "proc", "net", "tcp", "udp", "arp", "route", "version", "cmdline", "mounts"]
-    vulnNames = ['file', 'id', 'user', 'account', 'number', 'order', 'no', 'doc', 'key', 'email', 'group', 'profile', 'report']
+    rules = ["\.\.\/", "\.\.\;\/", "\.\.\\\\", "%2e%2e\/", ".ini", ".conf", "[A-Za-z]{1}:", "http:\/\/", "https:\/\/", "rsa", "id", "hosts", "motd", "bash", "history", ".log", "etc", "passwd", "proc", "net", "tcp", "udp", "arp", "route", "version", "cmdline", "mounts", "shadow", "issue", "group"]
+    vulnNames = ['file', 'id', 'user', 'account', 'number', 'order', 'no', 'doc', 'key', 'email', 'group', 'profile', 'report' , "name", "key"]
     alerts = [Alert]
     idpsMode = os.environ["idpsMode"]
     webServiceName = os.environ["webServiceName"]
