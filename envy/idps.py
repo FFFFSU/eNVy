@@ -114,13 +114,14 @@ class Packet:
 
     def getParameters(self):
         payload = self.url.split('?')
+        parameterList = []
         if len(payload) <= 1:
-            return []
+            pass
         else:
             payload = payload.pop()
-        parameters = payload.split('&')
-        parameterList = [Parameter(parameter.split('=')[0], parameter.split('=').pop(), "URL") for parameter in parameters]
-            
+            parameters = payload.split('&')
+            parameterList = [Parameter(parameter.split('=')[0], parameter.split('=').pop(), "URL") for parameter in parameters]
+        
         if self.requestMethod == "POST" and int(self.contentLength) > 0:
             postPayload = self.fullPacket.split('\n').pop()
             postParameters = postPayload.split('&')
@@ -150,7 +151,6 @@ class IDPS:
                 
                 if clientRequest != "":
                     packet = Packet(clientRequest, clientAddress)
-
                     if self.checkIDOR(packet) and idpsMode == "drop":
                         response = "HTTP/1.1 {} {}\n\n{}".format(403, responses[403], "<html><body><h1>Request denied</h1></body></html>")
                     else:
@@ -162,7 +162,10 @@ class IDPS:
                         
                         elif packet.requestMethod == "POST":
                             # Handle POST request to web application service
-                            webAppRequest = requests.post("http://{}/{}".format(webServiceName, packet.path))
+                            data = {}
+                            for parameter in packet.parameters:
+                                data["{}".format(parameter.name)] = parameter.value
+                            webAppRequest = requests.post("http://{}/{}".format(webServiceName, packet.path), data=data)
                             response = "HTTP/1.1 {} {}\n\n{}".format(webAppRequest.status_code, responses[webAppRequest.status_code], webAppRequest.text)
 
                     # Encode and send response from web application back to client & close connection
@@ -236,7 +239,7 @@ def main():
     global rules, vulnNames, alerts, idpsMode
     global webServiceName, idpsServiceName, nodeID, managerID, managerIPAddress, isWorker, worker
     host = "0.0.0.0"
-    port = 80
+    port = 8080
     rules = ["\.\.\/", "\.\.\;\/", "\.\.\\\\", "%2e%2e\/", ".ini", ".conf", "[A-Za-z]{1}:", "http:\/\/", "https:\/\/", "rsa", "id", "hosts", "motd", "bash", "history", ".log", "etc", "passwd", "proc", "net", "tcp", "udp", "arp", "route", "version", "cmdline", "mounts"]
     vulnNames = ['file', 'id', 'user', 'account', 'number', 'order', 'no', 'doc', 'key', 'email', 'group', 'profile', 'report']
     alerts = [Alert]
