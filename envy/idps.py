@@ -239,7 +239,7 @@ def main():
     global rules, vulnNames, alerts, idpsMode
     global webServiceName, idpsServiceName, nodeID, managerID, managerIPAddress, isWorker, worker
     host = "0.0.0.0"
-    port = 8080
+    port = 80
     rules = ["\.\.\/", "\.\.\;\/", "\.\.\\\\", "%2e%2e\/", ".ini", ".conf", "[A-Za-z]{1}:", "http:\/\/", "https:\/\/", "rsa", "id", "hosts", "motd", "bash", "history", ".log", "etc", "passwd", "proc", "net", "tcp", "udp", "arp", "route", "version", "cmdline", "mounts"]
     vulnNames = ['file', 'id', 'user', 'account', 'number', 'order', 'no', 'doc', 'key', 'email', 'group', 'profile', 'report']
     alerts = [Alert]
