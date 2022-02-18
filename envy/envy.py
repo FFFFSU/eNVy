@@ -64,17 +64,25 @@ def getIP():
 def buildImage():
     global dockerClient
 
+    # Pertama, mencari images dengan nama idps:latest
     dockerImages = dockerClient.images.list()
     imageTags = [dockerImage.tags for dockerImage in dockerImages]
     imageExist = any("idps:latest" in imageTag for imageTag in imageTags)
+
+    # Return jika ditemukan
     if imageExist:
         print("[Docker] Image found, idps:latest")
         return
+
+    # Jika tidak, maka coba build menggunakan dockerfile yang ada
     else:
         try:
+            # Coba build dan print saat pesan sukses saat berhasil
             print("[Docker] Building docker image. Please wait, it will take a while...")
             dockerClient.images.build(path=".", tag="idps:latest")
             print("[Docker] Image successfully built!")
+
+        # 3 case berikut adalah case terjadinya error. print error message, lalu exit aplikasi
         except docker.errors.BuildError as error:
             print("[Docker] Error! {}".format(error))
             exit(0)
@@ -101,6 +109,8 @@ def initializeIDPS():
     managerIPAddress = getIP()
 
     idpsMode = 0
+
+    # Tampilan menu mode IDPS dan validasi inputnya
     while idpsMode < 1 or idpsMode > 2:
         print("IDPS mode:")
         print("1. Monitor and alert only")
@@ -108,6 +118,7 @@ def initializeIDPS():
         idpsMode = int(input("Choose the mode you want to use: "))
     idpsMode = "monitor" if idpsMode == 1 else "drop"
 
+    # Data-data yang perlu dijadikan environment variable pada Docker Service
     env = [
         "webServiceName={}".format(webServiceName),
         "idpsServiceName={}".format(idpsServiceName),
@@ -117,25 +128,32 @@ def initializeIDPS():
         "idpsMode={}".format(idpsMode)
     ]
 
+    # Coba build Image
     buildImage()
 
+    # Coba create servicenya
     try:
         print("[Docker] Creating {} service...".format(idpsServiceName))
-        idpsService = dockerClient.services.create("idps:latest", name=idpsServiceName, networks=[networkName], mode=docker.types.ServiceMode("replicated"), env=env, endpoint_spec=docker.types.EndpointSpec(ports= {80:80}))
+        idpsService = dockerClient.services.create("idps:latest", name=idpsServiceName, networks=[networkName], mode=docker.types.ServiceMode("global"), env=env, endpoint_spec=docker.types.EndpointSpec(mode='dnsrr', ports= {80:(80, "tcp", "host")}))
     except docker.errors.APIError as error:
         print("[Docker] Error! {}".format(error))
 
+    # Menjalankan service Manager dan listen di port 9999
     manager = Manager("0.0.0.0", 9999)
     manager.startService()
 
 def checkIDPSService():
-    
+    # Mengambil list dari semua service yang berjalan
     services = dockerClient.services.list()
     for service in services:
+
+        # Validasi nama service idps dengan list service
         if service.name == idpsServiceName:
+            # Jika sama, maka return object servicenya
             try:
                 runningService = dockerClient.services.get(service.id)
                 return runningService
+            # Case jika terjadi error, print errornya
             except docker.errors.APIError as error:
                 print("[Docker] Error! {}".format(error))
             except docker.errors.NotFound as error:
@@ -151,6 +169,8 @@ def getManagerID():
 def menu():
     global networkName, webServiceName, idpsServiceName, idpsSerivice
     selection = 0
+
+    # Tampilan menu
     while selection < 1 or selection > 4:
         print("\n\n\neNVy")
         print("===============================")
@@ -161,15 +181,19 @@ def menu():
         selection = int(input(">>> "))
 
         if selection == 1:
+            # Simpan nama network dari getNetworkName
             networkName = getNetworkName()
             selection = 0
         elif selection == 2:
+            # Simpan nama service dari getWebServiceName
             webServiceName = getWebServiceName()
             selection = 0
         elif selection == 3:
+            # Mulai proses deployment IDPS
             initializeIDPS()
             selection = 0
         elif selection == 4:
+            # Validasi saat exit, matikan service atau tidak
             if idpsServiceName != "Not set":
                 shutDown = ""
                 while shutDown.lower() != 'y' and shutDown.lower() != 'n':

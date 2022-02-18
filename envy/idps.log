@@ -70,3 +70,220 @@ ALERT: 02/04/22-08:52:52.247279 | 192.168.100.178:54358 -> 192.168.100.192:8080 
 ALERT: 02/04/22-08:52:52.247279 | 192.168.100.178:54358 -> 192.168.100.192:8080 (NodeID: wjqrsxzrnl5ms0dwn0iu2oghp) | Directory traversal attempt detected, payload: [A-Za-z]{1}: | User-Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Mobile Safari/537.36
 ALERT: 02/04/22-08:52:52.247328 | 192.168.100.178:54358 -> 192.168.100.192:8080 (NodeID: wjqrsxzrnl5ms0dwn0iu2oghp) | Directory traversal attempt detected, payload: https:\/\/ | User-Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Mobile Safari/537.36
 ALERT: 02/04/22-08:52:52.247328 | 192.168.100.178:54358 -> 192.168.100.192:8080 (NodeID: wjqrsxzrnl5ms0dwn0iu2oghp) | Directory traversal attempt detected, payload: https:\/\/ | User-Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Mobile Safari/537.36
+ALERT: 02/16/22-11:55:47.010521 | 10.0.0.2:51475 -> 192.168.100.192 (NodeID: o4f5k7ng77b0m65efkacev6tx) | Directory traversal attempt detected, payload: \.\.\/ | User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36
+ALERT: 02/16/22-11:55:47.010614 | 10.0.0.2:51475 -> 192.168.100.192 (NodeID: o4f5k7ng77b0m65efkacev6tx) | Directory traversal attempt detected, payload: etc | User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36
+ALERT: 02/16/22-11:55:47.010632 | 10.0.0.2:51475 -> 192.168.100.192 (NodeID: o4f5k7ng77b0m65efkacev6tx) | Directory traversal attempt detected, payload: passwd | User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36
+ALERT: 02/16/22-12:10:59.628944 | 10.0.0.3:39752 -> 192.168.100.211 (NodeID: tnyr67ardgm1dib6v184pgnon) | Vulnerable parameter name, payload: user_id | User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:96.0) Gecko/20100101 Firefox/96.0
+ALERT: 02/16/22-12:10:59.629029 | 10.0.0.3:39752 -> 192.168.100.211 (NodeID: tnyr67ardgm1dib6v184pgnon) | Vulnerable parameter name, payload: user_id | User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:96.0) Gecko/20100101 Firefox/96.0
+ALERT: 02/16/22-12:59:57.193503 | 10.0.0.3:40468 -> 192.168.100.211 (NodeID: o4f5k7ng77b0m65efkacev6tx) | Directory traversal attempt detected, payload: \.\.\/ | User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:96.0) Gecko/20100101 Firefox/96.0
+ALERT: 02/16/22-12:59:57.194229 | 10.0.0.3:40468 -> 192.168.100.211 (NodeID: o4f5k7ng77b0m65efkacev6tx) | Directory traversal attempt detected, payload: etc | User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:96.0) Gecko/20100101 Firefox/96.0
+ALERT: 02/16/22-12:59:57.194288 | 10.0.0.3:40468 -> 192.168.100.211 (NodeID: o4f5k7ng77b0m65efkacev6tx) | Directory traversal attempt detected, payload: passwd | User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:96.0) Gecko/20100101 Firefox/96.0
+ALERT: 02/16/22-13:00:14.090508 | 10.0.0.3:40482 -> 192.168.100.211 (NodeID: tnyr67ardgm1dib6v184pgnon) | Multiple encoding detected, payload: %252e%252e%252f | User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:96.0) Gecko/20100101 Firefox/96.0
+ALERT: 02/16/22-13:00:14.090565 | 10.0.0.3:40482 -> 192.168.100.211 (NodeID: tnyr67ardgm1dib6v184pgnon) | Directory traversal attempt detected, payload: \.\.\/ | User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:96.0) Gecko/20100101 Firefox/96.0
+ALERT: 02/16/22-13:00:28.084275 | 10.0.0.3:40484 -> 192.168.100.211 (NodeID: o4f5k7ng77b0m65efkacev6tx) | Directory traversal attempt detected, payload: \.\.\/ | User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:96.0) Gecko/20100101 Firefox/96.0
+ALERT: 02/16/22-13:00:28.084393 | 10.0.0.3:40484 -> 192.168.100.211 (NodeID: o4f5k7ng77b0m65efkacev6tx) | Directory traversal attempt detected, payload: hosts | User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:96.0) Gecko/20100101 Firefox/96.0
+ALERT: 02/16/22-13:00:28.084413 | 10.0.0.3:40484 -> 192.168.100.211 (NodeID: o4f5k7ng77b0m65efkacev6tx) | Directory traversal attempt detected, payload: etc | User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:96.0) Gecko/20100101 Firefox/96.0
+ALERT: 02/16/22-13:02:06.111783 | 10.0.0.3:40518 -> 192.168.100.211 (NodeID: tnyr67ardgm1dib6v184pgnon) | Vulnerable parameter name, payload: user_id | User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:96.0) Gecko/20100101 Firefox/96.0
+ALERT: 02/16/22-13:02:06.111822 | 10.0.0.3:40518 -> 192.168.100.211 (NodeID: tnyr67ardgm1dib6v184pgnon) | Vulnerable parameter name, payload: user_id | User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:96.0) Gecko/20100101 Firefox/96.0
+ALERT: 02/16/22-13:02:17.542361 | 10.0.0.3:40522 -> 192.168.100.211 (NodeID: o4f5k7ng77b0m65efkacev6tx) | Vulnerable parameter name, payload: user_id | User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:96.0) Gecko/20100101 Firefox/96.0
+ALERT: 02/16/22-13:02:17.542400 | 10.0.0.3:40522 -> 192.168.100.211 (NodeID: o4f5k7ng77b0m65efkacev6tx) | Vulnerable parameter name, payload: user_id | User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:96.0) Gecko/20100101 Firefox/96.0
+ALERT: 02/16/22-13:02:30.491959 | 10.0.0.3:40532 -> 192.168.100.211 (NodeID: tnyr67ardgm1dib6v184pgnon) | Vulnerable parameter name, payload: email | User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:96.0) Gecko/20100101 Firefox/96.0
+ALERT: 02/16/22-13:03:48.532057 | 10.0.0.3:40568 -> 192.168.100.211 (NodeID: o4f5k7ng77b0m65efkacev6tx) | Directory traversal attempt detected, payload: \.\.\/ | User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:96.0) Gecko/20100101 Firefox/96.0
+ALERT: 02/16/22-13:03:48.532132 | 10.0.0.3:40568 -> 192.168.100.211 (NodeID: o4f5k7ng77b0m65efkacev6tx) | Directory traversal attempt detected, payload: etc | User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:96.0) Gecko/20100101 Firefox/96.0
+ALERT: 02/16/22-13:03:48.532149 | 10.0.0.3:40568 -> 192.168.100.211 (NodeID: o4f5k7ng77b0m65efkacev6tx) | Directory traversal attempt detected, payload: passwd | User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:96.0) Gecko/20100101 Firefox/96.0
+ALERT: 02/16/22-13:04:08.856071 | 10.0.0.3:40596 -> 192.168.100.211 (NodeID: tnyr67ardgm1dib6v184pgnon) | Directory traversal attempt detected, payload: \.\.\/ | User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:96.0) Gecko/20100101 Firefox/96.0
+ALERT: 02/16/22-13:04:08.856141 | 10.0.0.3:40596 -> 192.168.100.211 (NodeID: tnyr67ardgm1dib6v184pgnon) | Directory traversal attempt detected, payload: etc | User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:96.0) Gecko/20100101 Firefox/96.0
+ALERT: 02/16/22-13:04:08.856156 | 10.0.0.3:40596 -> 192.168.100.211 (NodeID: tnyr67ardgm1dib6v184pgnon) | Directory traversal attempt detected, payload: passwd | User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:96.0) Gecko/20100101 Firefox/96.0
+ALERT: 02/16/22-13:04:30.125057 | 10.0.0.3:40600 -> 192.168.100.211 (NodeID: o4f5k7ng77b0m65efkacev6tx) | Directory traversal attempt detected, payload: \.\.\/ | User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:96.0) Gecko/20100101 Firefox/96.0
+ALERT: 02/16/22-13:04:30.125179 | 10.0.0.3:40600 -> 192.168.100.211 (NodeID: o4f5k7ng77b0m65efkacev6tx) | Directory traversal attempt detected, payload: etc | User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:96.0) Gecko/20100101 Firefox/96.0
+ALERT: 02/16/22-13:04:30.125200 | 10.0.0.3:40600 -> 192.168.100.211 (NodeID: o4f5k7ng77b0m65efkacev6tx) | Directory traversal attempt detected, payload: passwd | User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:96.0) Gecko/20100101 Firefox/96.0
+ALERT: 02/16/22-13:04:52.259088 | 10.0.0.3:40614 -> 192.168.100.211 (NodeID: tnyr67ardgm1dib6v184pgnon) | Directory traversal attempt detected, payload: \.\.\/ | User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:96.0) Gecko/20100101 Firefox/96.0
+ALERT: 02/16/22-13:05:00.106002 | 10.0.0.3:40634 -> 192.168.100.211 (NodeID: tnyr67ardgm1dib6v184pgnon) | Directory traversal attempt detected, payload: \.\.\/ | User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:96.0) Gecko/20100101 Firefox/96.0
+ALERT: 02/16/22-13:05:13.466875 | 10.0.0.2:51720 -> 192.168.100.192 (NodeID: tnyr67ardgm1dib6v184pgnon) | Directory traversal attempt detected, payload: \.\.\/ | User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36
+ALERT: 02/16/22-13:05:13.466943 | 10.0.0.2:51720 -> 192.168.100.192 (NodeID: tnyr67ardgm1dib6v184pgnon) | Directory traversal attempt detected, payload: etc | User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36
+ALERT: 02/16/22-13:05:13.466959 | 10.0.0.2:51720 -> 192.168.100.192 (NodeID: tnyr67ardgm1dib6v184pgnon) | Directory traversal attempt detected, payload: passwd | User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36
+ALERT: 02/16/22-13:05:34.704823 | 10.0.0.2:51722 -> 192.168.100.192 (NodeID: tnyr67ardgm1dib6v184pgnon) | Directory traversal attempt detected, payload: \.\.\/ | User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36
+ALERT: 02/16/22-13:05:34.704898 | 10.0.0.2:51722 -> 192.168.100.192 (NodeID: tnyr67ardgm1dib6v184pgnon) | Directory traversal attempt detected, payload: etc | User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36
+ALERT: 02/16/22-13:05:34.704920 | 10.0.0.2:51722 -> 192.168.100.192 (NodeID: tnyr67ardgm1dib6v184pgnon) | Directory traversal attempt detected, payload: passwd | User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36
+ALERT: 02/16/22-13:05:36.426998 | 10.0.0.2:51723 -> 192.168.100.192 (NodeID: o4f5k7ng77b0m65efkacev6tx) | Directory traversal attempt detected, payload: \.\.\/ | User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36
+ALERT: 02/16/22-13:05:36.427069 | 10.0.0.2:51723 -> 192.168.100.192 (NodeID: o4f5k7ng77b0m65efkacev6tx) | Directory traversal attempt detected, payload: etc | User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36
+ALERT: 02/16/22-13:05:36.427085 | 10.0.0.2:51723 -> 192.168.100.192 (NodeID: o4f5k7ng77b0m65efkacev6tx) | Directory traversal attempt detected, payload: passwd | User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36
+ALERT: 02/16/22-13:05:36.431570 | 10.0.0.3:40642 -> 192.168.100.211 (NodeID: o4f5k7ng77b0m65efkacev6tx) | Directory traversal attempt detected, payload: \.\.\/ | User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:96.0) Gecko/20100101 Firefox/96.0
+ALERT: 02/16/22-13:05:36.431631 | 10.0.0.3:40642 -> 192.168.100.211 (NodeID: o4f5k7ng77b0m65efkacev6tx) | Directory traversal attempt detected, payload: etc | User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:96.0) Gecko/20100101 Firefox/96.0
+ALERT: 02/16/22-13:05:36.431647 | 10.0.0.3:40642 -> 192.168.100.211 (NodeID: o4f5k7ng77b0m65efkacev6tx) | Directory traversal attempt detected, payload: passwd | User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:96.0) Gecko/20100101 Firefox/96.0
+ALERT: 02/16/22-13:07:56.024860 | 10.0.0.2:51728 -> 192.168.100.192 (NodeID: o4f5k7ng77b0m65efkacev6tx) | Directory traversal attempt detected, payload: \.\.\/ | User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36
+ALERT: 02/16/22-13:07:56.024923 | 10.0.0.2:51728 -> 192.168.100.192 (NodeID: o4f5k7ng77b0m65efkacev6tx) | Directory traversal attempt detected, payload: etc | User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36
+ALERT: 02/16/22-13:07:56.024936 | 10.0.0.2:51728 -> 192.168.100.192 (NodeID: o4f5k7ng77b0m65efkacev6tx) | Directory traversal attempt detected, payload: passwd | User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36
+ALERT: 02/16/22-13:08:12.831917 | 10.0.0.2:51729 -> 192.168.100.192 (NodeID: tnyr67ardgm1dib6v184pgnon) | Directory traversal attempt detected, payload: \.\.\/ | User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36
+ALERT: 02/16/22-13:08:12.831977 | 10.0.0.2:51729 -> 192.168.100.192 (NodeID: tnyr67ardgm1dib6v184pgnon) | Directory traversal attempt detected, payload: etc | User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36
+ALERT: 02/16/22-13:08:12.831991 | 10.0.0.2:51729 -> 192.168.100.192 (NodeID: tnyr67ardgm1dib6v184pgnon) | Directory traversal attempt detected, payload: passwd | User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36
+ALERT: 02/16/22-13:08:54.212550 | 10.0.0.3:40850 -> 192.168.100.211 (NodeID: o4f5k7ng77b0m65efkacev6tx) | Directory traversal attempt detected, payload: \.\.\/ | User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36
+ALERT: 02/16/22-13:08:54.212611 | 10.0.0.3:40850 -> 192.168.100.211 (NodeID: o4f5k7ng77b0m65efkacev6tx) | Directory traversal attempt detected, payload: etc | User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36
+ALERT: 02/16/22-13:08:54.212625 | 10.0.0.3:40850 -> 192.168.100.211 (NodeID: o4f5k7ng77b0m65efkacev6tx) | Directory traversal attempt detected, payload: passwd | User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36
+ALERT: 02/16/22-13:09:00.289705 | 10.0.0.3:40872 -> 192.168.100.211 (NodeID: tnyr67ardgm1dib6v184pgnon) | Directory traversal attempt detected, payload: \.\.\/ | User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36
+ALERT: 02/16/22-13:09:00.289759 | 10.0.0.3:40872 -> 192.168.100.211 (NodeID: tnyr67ardgm1dib6v184pgnon) | Directory traversal attempt detected, payload: hosts | User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36
+ALERT: 02/16/22-13:09:00.289775 | 10.0.0.3:40872 -> 192.168.100.211 (NodeID: tnyr67ardgm1dib6v184pgnon) | Directory traversal attempt detected, payload: etc | User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36
+GET / HTTP/1.1
+Host: 192.168.100.192:9999
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9,id;q=0.8,en-GB;q=0.7
+
+GET / HTTP/1.1
+Host: 192.168.100.192:9999
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9,id;q=0.8,en-GB;q=0.7
+
+GET / HTTP/1.1
+Host: 192.168.100.192:9999
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9,id;q=0.8,en-GB;q=0.7
+
+GET / HTTP/1.1
+Host: 192.168.100.192:9999
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9,id;q=0.8,en-GB;q=0.7
+
+GET / HTTP/1.1
+Host: 192.168.100.192:9999
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9,id;q=0.8,en-GB;q=0.7
+
+GET / HTTP/1.1
+Host: 192.168.100.192:9999
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9,id;q=0.8,en-GB;q=0.7
+
+GET / HTTP/1.1
+Host: 192.168.100.192:9999
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9,id;q=0.8,en-GB;q=0.7
+
+GET / HTTP/1.1
+Host: 192.168.100.192:9999
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9,id;q=0.8,en-GB;q=0.7
+
+GET / HTTP/1.1
+Host: 192.168.100.192:9999
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9,id;q=0.8,en-GB;q=0.7
+
+ALERT: 02/18/22-04:52:44.796058 | 10.0.0.2:49754 -> 192.168.100.192 (NodeID: tnyr67ardgm1dib6v184pgnon) | Directory traversal attempt detected, payload: \.\.\/ | User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36
+ALERT: 02/18/22-04:55:34.316064 | 192.168.100.178:49761 -> 192.168.100.192 (NodeID: o4f5k7ng77b0m65efkacev6tx) | Directory traversal attempt detected, payload: \.\.\/ | User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36
+ALERT: 02/18/22-04:55:34.863920 | 192.168.100.178:49762 -> 192.168.100.192 (NodeID: o4f5k7ng77b0m65efkacev6tx) | Directory traversal attempt detected, payload: \.\.\/ | User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36
+ALERT: 02/18/22-04:55:35.013677 | 192.168.100.178:49763 -> 192.168.100.192 (NodeID: o4f5k7ng77b0m65efkacev6tx) | Directory traversal attempt detected, payload: \.\.\/ | User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36
+ALERT: 02/18/22-04:55:46.221695 | 192.168.100.178:49764 -> 192.168.100.192 (NodeID: o4f5k7ng77b0m65efkacev6tx) | Directory traversal attempt detected, payload: \.\.\/ | User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36
+ALERT: 02/18/22-04:55:46.714251 | 192.168.100.178:49765 -> 192.168.100.192 (NodeID: o4f5k7ng77b0m65efkacev6tx) | Directory traversal attempt detected, payload: \.\.\/ | User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36
+ALERT: 02/18/22-04:58:15.092609 | 192.168.100.178:49774 -> 192.168.100.192 (NodeID: o4f5k7ng77b0m65efkacev6tx) | Directory traversal attempt detected, payload: \.\.\/ | User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36
+ALERT: 02/18/22-04:58:15.222324 | 192.168.100.178:49775 -> 192.168.100.192 (NodeID: o4f5k7ng77b0m65efkacev6tx) | Directory traversal attempt detected, payload: \.\.\/ | User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36
+ALERT: 02/18/22-04:59:08.769799 | 192.168.100.178:49776 -> 192.168.100.192 (NodeID: o4f5k7ng77b0m65efkacev6tx) | Directory traversal attempt detected, payload: \.\.\/ | User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36
+ALERT: 02/18/22-04:59:08.771060 | 192.168.100.211:51560 -> 192.168.100.192 (NodeID: o4f5k7ng77b0m65efkacev6tx) | Directory traversal attempt detected, payload: \.\.\/ | User-Agent: curl/7.68.0
+ALERT: 02/18/22-04:59:08.771988 | 192.168.100.211:51564 -> 192.168.100.192 (NodeID: o4f5k7ng77b0m65efkacev6tx) | Directory traversal attempt detected, payload: \.\.\/ | User-Agent: curl/7.68.0
+ALERT: 02/18/22-04:59:09.469771 | 192.168.100.178:49778 -> 192.168.100.192 (NodeID: o4f5k7ng77b0m65efkacev6tx) | Directory traversal attempt detected, payload: \.\.\/ | User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36
+ALERT: 02/18/22-04:59:10.570707 | 192.168.100.178:49779 -> 192.168.100.192 (NodeID: o4f5k7ng77b0m65efkacev6tx) | Directory traversal attempt detected, payload: \.\.\/ | User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36
+ALERT: 02/18/22-04:59:10.899138 | 192.168.100.178:49780 -> 192.168.100.192 (NodeID: o4f5k7ng77b0m65efkacev6tx) | Directory traversal attempt detected, payload: \.\.\/ | User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36
+ALERT: 02/18/22-04:59:11.055656 | 192.168.100.178:49781 -> 192.168.100.192 (NodeID: o4f5k7ng77b0m65efkacev6tx) | Directory traversal attempt detected, payload: \.\.\/ | User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36
+ALERT: 02/18/22-04:59:12.723639 | 192.168.100.178:49782 -> 192.168.100.192 (NodeID: o4f5k7ng77b0m65efkacev6tx) | Directory traversal attempt detected, payload: \.\.\/ | User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36
+ALERT: 02/18/22-04:59:13.025226 | 192.168.100.178:49783 -> 192.168.100.192 (NodeID: o4f5k7ng77b0m65efkacev6tx) | Directory traversal attempt detected, payload: \.\.\/ | User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36
+ALERT: 02/18/22-04:59:13.355088 | 192.168.100.178:49784 -> 192.168.100.192 (NodeID: o4f5k7ng77b0m65efkacev6tx) | Directory traversal attempt detected, payload: \.\.\/ | User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36
+ALERT: 02/18/22-04:59:19.130802 | 192.168.100.178:49785 -> 192.168.100.192 (NodeID: o4f5k7ng77b0m65efkacev6tx) | Directory traversal attempt detected, payload: \.\.\/ | User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36
+ALERT: 02/18/22-04:59:19.130871 | 192.168.100.178:49785 -> 192.168.100.192 (NodeID: o4f5k7ng77b0m65efkacev6tx) | Directory traversal attempt detected, payload: etc | User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36
+ALERT: 02/18/22-04:59:19.130888 | 192.168.100.178:49785 -> 192.168.100.192 (NodeID: o4f5k7ng77b0m65efkacev6tx) | Directory traversal attempt detected, payload: passwd | User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36
+ALERT: 02/18/22-05:00:23.042242 | 192.168.100.178:49791 -> 192.168.100.192 (NodeID: o4f5k7ng77b0m65efkacev6tx) | Vulnerable parameter name, payload: user_id | User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36
+ALERT: 02/18/22-05:00:23.042291 | 192.168.100.178:49791 -> 192.168.100.192 (NodeID: o4f5k7ng77b0m65efkacev6tx) | Vulnerable parameter name, payload: user_id | User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36
+ALERT: 02/18/22-05:00:29.452640 | 192.168.100.178:49793 -> 192.168.100.192 (NodeID: o4f5k7ng77b0m65efkacev6tx) | Directory traversal attempt detected, payload: \.\.\/ | User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36
+ALERT: 02/18/22-05:00:29.452716 | 192.168.100.178:49793 -> 192.168.100.192 (NodeID: o4f5k7ng77b0m65efkacev6tx) | Directory traversal attempt detected, payload: etc | User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36
+ALERT: 02/18/22-05:00:29.452733 | 192.168.100.178:49793 -> 192.168.100.192 (NodeID: o4f5k7ng77b0m65efkacev6tx) | Directory traversal attempt detected, payload: passwd | User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36
+ALERT: 02/18/22-05:27:31.601698 | 192.168.100.192:39960 -> 192.168.100.211 (NodeID: tnyr67ardgm1dib6v184pgnon) | Directory traversal attempt detected, payload: \.\.\/ | User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36
+ALERT: 02/18/22-05:27:31.602220 | 192.168.100.192:39960 -> 192.168.100.211 (NodeID: tnyr67ardgm1dib6v184pgnon) | Directory traversal attempt detected, payload: hosts | User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36
+ALERT: 02/18/22-05:27:31.602394 | 192.168.100.192:39960 -> 192.168.100.211 (NodeID: tnyr67ardgm1dib6v184pgnon) | Directory traversal attempt detected, payload: etc | User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36
+ALERT: 02/18/22-05:29:22.061900 | 192.168.100.192:40014 -> 192.168.100.211 (NodeID: tnyr67ardgm1dib6v184pgnon) | Directory traversal attempt detected, payload: \.\.\/ | User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36
+ALERT: 02/18/22-05:29:22.062006 | 192.168.100.192:40014 -> 192.168.100.211 (NodeID: tnyr67ardgm1dib6v184pgnon) | Directory traversal attempt detected, payload: etc | User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36
+ALERT: 02/18/22-05:29:22.062024 | 192.168.100.192:40014 -> 192.168.100.211 (NodeID: tnyr67ardgm1dib6v184pgnon) | Directory traversal attempt detected, payload: passwd | User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36
+ALERT: 02/18/22-05:29:30.177525 | 192.168.100.192:40016 -> 192.168.100.211 (NodeID: tnyr67ardgm1dib6v184pgnon) | Directory traversal attempt detected, payload: \.\.\/ | User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36
+ALERT: 02/18/22-05:29:30.177579 | 192.168.100.192:40016 -> 192.168.100.211 (NodeID: tnyr67ardgm1dib6v184pgnon) | Directory traversal attempt detected, payload: hosts | User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36
+ALERT: 02/18/22-05:29:30.177596 | 192.168.100.192:40016 -> 192.168.100.211 (NodeID: tnyr67ardgm1dib6v184pgnon) | Directory traversal attempt detected, payload: etc | User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36
+ALERT: 02/18/22-05:32:24.185872 | 192.168.100.192:40052 -> 192.168.100.211 (NodeID: tnyr67ardgm1dib6v184pgnon) | Vulnerable parameter name, payload: user_id | User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36
+ALERT: 02/18/22-05:32:24.185915 | 192.168.100.192:40052 -> 192.168.100.211 (NodeID: tnyr67ardgm1dib6v184pgnon) | Vulnerable parameter name, payload: user_id | User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36
+ALERT: 02/18/22-05:32:34.731088 | 192.168.100.192:40054 -> 192.168.100.211 (NodeID: tnyr67ardgm1dib6v184pgnon) | Vulnerable parameter name, payload: user_id | User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36
+ALERT: 02/18/22-05:32:34.731129 | 192.168.100.192:40054 -> 192.168.100.211 (NodeID: tnyr67ardgm1dib6v184pgnon) | Vulnerable parameter name, payload: user_id | User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36
+ALERT: 02/18/22-05:32:42.667567 | 192.168.100.192:40326 -> 192.168.100.211 (NodeID: tnyr67ardgm1dib6v184pgnon) | Vulnerable parameter name, payload: email | User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36
+ALERT: 02/18/22-05:32:52.258810 | 192.168.100.192:40410 -> 192.168.100.211 (NodeID: tnyr67ardgm1dib6v184pgnon) | Vulnerable parameter name, payload: user | User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36
+ALERT: 02/18/22-05:35:34.617676 | 192.168.100.192:41530 -> 192.168.100.211 (NodeID: tnyr67ardgm1dib6v184pgnon) | Directory traversal attempt detected, payload: \.\.\/ | User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36
+ALERT: 02/18/22-05:35:34.618281 | 192.168.100.192:41530 -> 192.168.100.211 (NodeID: tnyr67ardgm1dib6v184pgnon) | Directory traversal attempt detected, payload: etc | User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36
+ALERT: 02/18/22-05:35:34.618335 | 192.168.100.192:41530 -> 192.168.100.211 (NodeID: tnyr67ardgm1dib6v184pgnon) | Directory traversal attempt detected, payload: passwd | User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36
+ALERT: 02/18/22-05:35:43.060000 | 192.168.100.192:41532 -> 192.168.100.211 (NodeID: tnyr67ardgm1dib6v184pgnon) | Directory traversal attempt detected, payload: \.\.\/ | User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36
+ALERT: 02/18/22-05:35:43.060058 | 192.168.100.192:41532 -> 192.168.100.211 (NodeID: tnyr67ardgm1dib6v184pgnon) | Directory traversal attempt detected, payload: hosts | User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36
+ALERT: 02/18/22-05:35:43.060074 | 192.168.100.192:41532 -> 192.168.100.211 (NodeID: tnyr67ardgm1dib6v184pgnon) | Directory traversal attempt detected, payload: etc | User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36
+ALERT: 02/18/22-05:35:50.067815 | 192.168.100.192:41540 -> 192.168.100.211 (NodeID: tnyr67ardgm1dib6v184pgnon) | Directory traversal attempt detected, payload: \.\.\/ | User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36
+ALERT: 02/18/22-05:35:50.067877 | 192.168.100.192:41540 -> 192.168.100.211 (NodeID: tnyr67ardgm1dib6v184pgnon) | Directory traversal attempt detected, payload: net | User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36
+ALERT: 02/18/22-05:35:50.067891 | 192.168.100.192:41540 -> 192.168.100.211 (NodeID: tnyr67ardgm1dib6v184pgnon) | Directory traversal attempt detected, payload: tcp | User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36
+ALERT: 02/18/22-05:36:06.114267 | 192.168.100.192:41542 -> 192.168.100.211 (NodeID: tnyr67ardgm1dib6v184pgnon) | Directory traversal attempt detected, payload: \.\.\/ | User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36
+ALERT: 02/18/22-05:36:06.114387 | 192.168.100.192:41542 -> 192.168.100.211 (NodeID: tnyr67ardgm1dib6v184pgnon) | Directory traversal attempt detected, payload: proc | User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36
+ALERT: 02/18/22-05:36:06.114411 | 192.168.100.192:41542 -> 192.168.100.211 (NodeID: tnyr67ardgm1dib6v184pgnon) | Directory traversal attempt detected, payload: version | User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36
+ALERT: 02/18/22-05:36:11.009723 | 192.168.100.192:41548 -> 192.168.100.211 (NodeID: tnyr67ardgm1dib6v184pgnon) | Directory traversal attempt detected, payload: \.\.\/ | User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36
+ALERT: 02/18/22-05:36:11.009793 | 192.168.100.192:41548 -> 192.168.100.211 (NodeID: tnyr67ardgm1dib6v184pgnon) | Directory traversal attempt detected, payload: proc | User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36
+ALERT: 02/18/22-05:36:11.009814 | 192.168.100.192:41548 -> 192.168.100.211 (NodeID: tnyr67ardgm1dib6v184pgnon) | Directory traversal attempt detected, payload: cmdline | User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36
+ALERT: 02/18/22-05:36:18.610869 | 192.168.100.192:41550 -> 192.168.100.211 (NodeID: tnyr67ardgm1dib6v184pgnon) | Directory traversal attempt detected, payload: \.\.\/ | User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36
+ALERT: 02/18/22-05:36:18.610939 | 192.168.100.192:41550 -> 192.168.100.211 (NodeID: tnyr67ardgm1dib6v184pgnon) | Directory traversal attempt detected, payload: etc | User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36
+ALERT: 02/18/22-05:36:21.474476 | 192.168.100.192:41556 -> 192.168.100.211 (NodeID: tnyr67ardgm1dib6v184pgnon) | Directory traversal attempt detected, payload: \.\.\/ | User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36
+ALERT: 02/18/22-05:36:21.474537 | 192.168.100.192:41556 -> 192.168.100.211 (NodeID: tnyr67ardgm1dib6v184pgnon) | Directory traversal attempt detected, payload: hosts | User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36
+ALERT: 02/18/22-05:36:21.474556 | 192.168.100.192:41556 -> 192.168.100.211 (NodeID: tnyr67ardgm1dib6v184pgnon) | Directory traversal attempt detected, payload: etc | User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36
+ALERT: 02/18/22-05:37:19.199556 | 192.168.100.192:41590 -> 192.168.100.211 (NodeID: tnyr67ardgm1dib6v184pgnon) | Directory traversal attempt detected, payload: \.\.\/ | User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36
+ALERT: 02/18/22-05:37:19.200303 | 192.168.100.192:41590 -> 192.168.100.211 (NodeID: tnyr67ardgm1dib6v184pgnon) | Directory traversal attempt detected, payload: etc | User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36
+ALERT: 02/18/22-05:37:19.200360 | 192.168.100.192:41590 -> 192.168.100.211 (NodeID: tnyr67ardgm1dib6v184pgnon) | Directory traversal attempt detected, payload: passwd | User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36
+ALERT: 02/18/22-05:37:26.253464 | 192.168.100.192:41592 -> 192.168.100.211 (NodeID: tnyr67ardgm1dib6v184pgnon) | Directory traversal attempt detected, payload: \.\.\/ | User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36
+ALERT: 02/18/22-05:37:26.253525 | 192.168.100.192:41592 -> 192.168.100.211 (NodeID: tnyr67ardgm1dib6v184pgnon) | Directory traversal attempt detected, payload: hosts | User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36
+ALERT: 02/18/22-05:37:26.253543 | 192.168.100.192:41592 -> 192.168.100.211 (NodeID: tnyr67ardgm1dib6v184pgnon) | Directory traversal attempt detected, payload: etc | User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36
+ALERT: 02/18/22-05:37:32.456599 | 192.168.100.192:41594 -> 192.168.100.211 (NodeID: tnyr67ardgm1dib6v184pgnon) | Directory traversal attempt detected, payload: \.\.\/ | User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36
+ALERT: 02/18/22-05:37:32.456669 | 192.168.100.192:41594 -> 192.168.100.211 (NodeID: tnyr67ardgm1dib6v184pgnon) | Directory traversal attempt detected, payload: etc | User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36
+ALERT: 02/18/22-05:37:32.456684 | 192.168.100.192:41594 -> 192.168.100.211 (NodeID: tnyr67ardgm1dib6v184pgnon) | Directory traversal attempt detected, payload: passwd | User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36
+ALERT: 02/18/22-09:46:30.484653 | 192.168.100.211:55154 -> 192.168.100.192 (NodeID: o4f5k7ng77b0m65efkacev6tx) | Directory traversal attempt detected, payload: \.\.\/ | User-Agent: curl/7.68.0
+ALERT: 02/18/22-09:46:50.479942 | 192.168.100.211:55158 -> 192.168.100.192 (NodeID: o4f5k7ng77b0m65efkacev6tx) | Directory traversal attempt detected, payload: \.\.\/ | User-Agent: curl/7.68.0
+ALERT: 02/18/22-09:46:50.480004 | 192.168.100.211:55158 -> 192.168.100.192 (NodeID: o4f5k7ng77b0m65efkacev6tx) | Directory traversal attempt detected, payload: etc | User-Agent: curl/7.68.0
+ALERT: 02/18/22-09:46:50.480019 | 192.168.100.211:55158 -> 192.168.100.192 (NodeID: o4f5k7ng77b0m65efkacev6tx) | Directory traversal attempt detected, payload: passwd | User-Agent: curl/7.68.0
+ALERT: 02/18/22-10:48:48.539188 | 192.168.100.192:45598 -> 192.168.100.211 (NodeID: tnyr67ardgm1dib6v184pgnon) | Directory traversal attempt detected, payload: \.\.\/ | User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36
+ALERT: 02/18/22-10:48:48.539289 | 192.168.100.192:45598 -> 192.168.100.211 (NodeID: tnyr67ardgm1dib6v184pgnon) | Directory traversal attempt detected, payload: etc | User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36
+ALERT: 02/18/22-10:48:48.539310 | 192.168.100.192:45598 -> 192.168.100.211 (NodeID: tnyr67ardgm1dib6v184pgnon) | Directory traversal attempt detected, payload: passwd | User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36
